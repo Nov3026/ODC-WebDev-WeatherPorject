@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* Tailwind v4 customization using @theme */
+@theme {
+  --color-royal-blue: #003C82;
+  --color-deep-navy: #001F45;
+  --color-bright-cyan: #00AEEF;
+  --color-pure-white: #FFFFFF;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+}
+
+/* Optional: custom utilities */
+.card {
+  @apply bg-white/10 backdrop-blur-md p-4 rounded-2xl shadow-lg;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--color-royal-blue), var(--color-bright-cyan));
+  -webkit-background-clip: text;
+  color: transparent;
+}
